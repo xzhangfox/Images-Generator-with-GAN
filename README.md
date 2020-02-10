@@ -1,4 +1,4 @@
-# Images Generator with Gan
+# Images Generator with GAN
 In this project, we structured an image generator with the cutting-edge machine learning technic – GAN (Generative Adversarial Networks) based on the concepts of game theory, and Keras TensorFlow Core. We persued to leverage image data to generate new images under the mutual supervision of the internal neural networks.
 
 Team Members:
