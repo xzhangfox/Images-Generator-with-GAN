@@ -29,7 +29,7 @@ https://www.kaggle.com/c/generative-dog-images
 ![image](https://github.com/f0000000x/Images-Generator-with-GAN/blob/master/Images/strGan.png)
 
 * Conditional Generative Adversarial Networks (CGAN), an extension of the GAN, allows you to generate images with specific conditions or attributes. Same as GAN, CGAN also has a generator and a discriminator. However, the difference is that both the generator and the discriminator of CGAN receive some extra conditional information, such as the class of the image, a graph, some words, or a sentence. Because of that, CGAN can make generator to generate different types of images, which will prevent generator from generating similar images after multiple trainings. Also, we can control the generator to generate an image which will have some properties we want.
-![image](https://https://github.com/f0000000x/Images-Generator-with-GAN/blob/master/Images/strCGAN.png)
+![image](https://github.com/f0000000x/Images-Generator-with-GAN/blob/master/Images/strCGAN.png)
 
 * If you are interested in the details of algorithms, model processing and results, please move to our report:  
 https://github.com/f0000000x/Images-Generator-with-GAN/blob/master/Final-Group-Project-Report/FinalReport.pdf
