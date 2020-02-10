@@ -35,7 +35,7 @@ https://www.kaggle.com/c/generative-dog-images
 https://github.com/f0000000x/Images-Generator-with-GAN/blob/master/Final-Group-Project-Report/FinalReport.pdf
 
 
-# Reference
+# References
 * Avinash H. (2017). The GAN Zoo. GitHub. https://github.com/hindupuravinash/the-gan-zoo
 * Hongyi, L. (2018). GAN Lecture 1: Introduction. YouTube. https://www.youtube.com/watch?v=DQNNMiAP5lw&list=PLJV_el3uVTsMq6JEFPW35BCiOQT soqwNw&index=1
 * Jason B. (2019). How to Develop a Conditional GAN (cGAN) From Scratch. Machine Learning Mastery. https://machinelearningmastery.com/how-to-develop-a-conditional-generative-adversarial-network-from-scratch/
