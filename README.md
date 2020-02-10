@@ -23,12 +23,27 @@ Our data comes from the Kaggle code competition, which was released in June 2019
 https://www.kaggle.com/c/generative-dog-images
 
 
-# Description of Models
+# Models
 
-* Based on the characteristics of stray animals, linear models are used to predict adoption rates and to find ways to increase adoption rates.
-* Since cuteness cannot be accurately quantified by a limited set of features, it may be more accurate to use deep learning to process animals images directly.
-* Create web pages for data visualization and user interaction. Users can enter animal features or upload images directly to get a prediction of the animal's adoption.
-* (Optional)Apply GAN(Generative Adversarial Networks) as a data augmentation tool or struct a demo for entertainment.
+* GAN is a minimax problem, which is one of zero-sum non-cooperative games. Generator wants to maximize its performance, which works to generate images as real as possible to confuse the Discriminator. Discriminator wants to distinguish a mixture of original and generated images whether real or fake. In this game, zero-sum means if Generator is improved, then there must be an increased loss of Discriminator. Our aim is to find the lowest aggregate loss of them, where there is a Nash Equilibrium.  
+![image](https://github.com/f0000000x/Images-Generator-with-GAN/blob/master/Images/strGan.png)
+
+* Conditional Generative Adversarial Networks (CGAN), an extension of the GAN, allows you to generate images with specific conditions or attributes. Same as GAN, CGAN also has a generator and a discriminator. However, the difference is that both the generator and the discriminator of CGAN receive some extra conditional information, such as the class of the image, a graph, some words, or a sentence. Because of that, CGAN can make generator to generate different types of images, which will prevent generator from generating similar images after multiple trainings. Also, we can control the generator to generate an image which will have some properties we want.
+![image](https://https://github.com/f0000000x/Images-Generator-with-GAN/blob/master/Images/strCGAN.png)
+
+* If you are interested in the details of algorithms, model processing and results, please move to our report:  
+https://github.com/f0000000x/Images-Generator-with-GAN/blob/master/Final-Group-Project-Report/FinalReport.pdf
+
 
 # Reference
-* Pet Statistics. (2020, February). Retrieved from https://www.aspca.org/animal-homelessness/shelter-intake-and-surrender/pet-statistics
+* Avinash H. (2017). The GAN Zoo. GitHub. https://github.com/hindupuravinash/the-gan-zoo
+* Hongyi, L. (2018). GAN Lecture 1: Introduction. YouTube. https://www.youtube.com/watch?v=DQNNMiAP5lw&list=PLJV_el3uVTsMq6JEFPW35BCiOQT soqwNw&index=1
+* Jason B. (2019). How to Develop a Conditional GAN (cGAN) From Scratch. Machine Learning Mastery. https://machinelearningmastery.com/how-to-develop-a-conditional-generative-adversarial-network-from-scratch/
+* Jonathan H. (2018). GAN — Ways to improve GAN performance. Towards Data Science. https://towardsdatascience.com/gan-ways-to-improve-gan-performance-acf37f9f59b
+* Jonathan H. (2018). GAN — CGAN & InfoGAN (using labels to improve GAN). Medium. https://medium.com/@jonathan_hui/gan-cgan-infogan-using-labels-to-improve-gan-8ba4de5f9c3d
+* Jonathan H. (2018). GAN — Why it is so hard to train Generative Adversarial Networks! Medium. https://medium.com/@jonathan_hui/gan-why-it-is-so-hard-to-train-generative-advisory-networks-819a86b3750b
+* Jonathan H. (2018). GAN — DCGAN (Deep convolutional generative adversarial networks) . Medium. https://medium.com/@jonathan_hui/gan-dcgan-deep-convolutional-generative-adversarial-networks-df855c438f
+* Jon G. (2019). Conditional generative adversarial nets for convolutional face generation. Stanford University.
+* Kaggle Competition. (2019). Generative Dog Images. Kaggle. https://www.kaggle.com/c/generative-dog-images
+* Naoki S. (2017). Up-sampling with Transposed Convolution. Medium. https://medium.com/activating-robotic-minds/up-sampling-with-transposed-convolution-9ae4f2df52d033
+* Utkarsh D. (2018). Keep Calm and train a GAN. Pitfalls and Tips on training Generative Adversarial Networks. Medium. https://medium.com/@utk.is.here/keep-calm-and-train-a-gan-pitfalls-and-tips-on-training-generative-adversarial-networks-edd529764aa9
