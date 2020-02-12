@@ -19,7 +19,7 @@ Combined with the knowledge of neural network learned in Machine Learning II, we
 # Data Description
 
 Our data comes from the Kaggle code competition, which was released in June 2019. Since the game has ended in August, the ranking of the leaderboard also has certain reference value for our own model progress.The open source data consists of the image archive and the annotation archive. After further study, we believe that the subfolder name of the picture package can fully perform the task of label, so our model only USES the picture compression package.  
-https://www.kaggle.com/c/generative-dog-images
+[Kaggle](https://www.kaggle.com/c/generative-dog-images)
 
 
 # Models
